@@ -110,8 +110,8 @@ db.password=postgres
 ### Utilizando o código-fonte
 
 ```bash
-mvn clean package
-java -jar target/agenda-telefonica.jar
+./gradlew clean jar
+java -jar build/libs/agenda-telefonica-1.0.0.jar
 ```
 
 ### Utilizando a Release
