@@ -9,3 +9,8 @@ INSERT INTO contato (id, nome, telefone, email)
 VALUES
     (1, 'Ariel', '34999999999', 'ariel@email.com'),
     (2, 'João', '31988888888', 'joao@email.com');
+
+SELECT setval(
+	'contato_id_seq',
+	(SELECT MAX(id) FROM contato)
+);
